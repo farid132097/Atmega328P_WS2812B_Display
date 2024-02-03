@@ -731,8 +731,8 @@
  743               	.LVL6:
  744 0196 0895      		ret
  745               	.LFE8:
- 747               	.global	WS2812B_Pixel_Delay
- 749               	WS2812B_Pixel_Delay:
+ 747               	.global	WS2812B_Reset
+ 749               	WS2812B_Reset:
  750               	.LFB9:
  751               	.LM179:
  752               	/* prologue: function */
@@ -741,7 +741,7 @@
  755 0198 80E0      		ldi r24,lo8(0)
  756 019a 90E0      		ldi r25,hi8(0)
  757               	.L24:
- 758               	.LBB4:
+ 758               	.LBB7:
  759               	.LM181:
  760               	/* #APP */
  761               	 ;  233 "ws2812b.c" 1
@@ -755,7 +755,7 @@
  769 01a4 9207      		cpc r25,r18
  770 01a6 01F4      		brne .L24
  771               	/* epilogue start */
- 772               	.LBE4:
+ 772               	.LBE7:
  773               	.LM183:
  774 01a8 0895      		ret
  775               	.LFE9:
@@ -765,31 +765,52 @@
  781               	.LM184:
  782               	/* prologue: function */
  783               	/* frame size = 0 */
- 784               	.LBB5:
- 785               	.LBB6:
+ 784               	.LBB8:
+ 785               	.LBB9:
  786               	.LM185:
  787 01aa 559A      		sbi 42-32,5
  788               	.LM186:
  789 01ac 5D98      		cbi 43-32,5
- 790               	/* epilogue start */
- 791               	.LBE6:
- 792               	.LBE5:
- 793               	.LM187:
- 794 01ae 0895      		ret
- 795               	.LFE10:
- 853               	.Letext0:
+ 790 01ae 80E0      		ldi r24,lo8(0)
+ 791 01b0 90E0      		ldi r25,hi8(0)
+ 792               	.L28:
+ 793               	.LBE9:
+ 794               	.LBE8:
+ 795               	.LBB10:
+ 796               	.LBB11:
+ 797               	.LBB12:
+ 798               	.LM187:
+ 799               	/* #APP */
+ 800               	 ;  233 "ws2812b.c" 1
+ 801 01b2 0000      		nop 
+ 802               	 ;  0 "" 2
+ 803               	/* #NOAPP */
+ 804 01b4 0196      		adiw r24,1
+ 805               	.LM188:
+ 806 01b6 2CE9      		ldi r18,hi8(-25536)
+ 807 01b8 8034      		cpi r24,lo8(-25536)
+ 808 01ba 9207      		cpc r25,r18
+ 809 01bc 01F4      		brne .L28
+ 810               	/* epilogue start */
+ 811               	.LBE12:
+ 812               	.LBE11:
+ 813               	.LBE10:
+ 814               	.LM189:
+ 815 01be 0895      		ret
+ 816               	.LFE10:
+ 874               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 ws2812b.c
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:2      *ABS*:0000003f __SREG__
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:3      *ABS*:0000003e __SP_H__
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:4      *ABS*:0000003d __SP_L__
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:5      *ABS*:00000034 __CCP__
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:6      *ABS*:00000000 __tmp_reg__
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:7      *ABS*:00000001 __zero_reg__
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:18     .text:00000000 WS2812B_Gpio_Init
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:34     .text:00000006 WS2812B_Send_Byte
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:717    .text:00000178 WS2812B_Send_Pixel
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:749    .text:00000198 WS2812B_Pixel_Delay
-C:\Users\farid\AppData\Local\Temp/ccEq42dd.s:779    .text:000001aa WS2812B_Init
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:2      *ABS*:0000003f __SREG__
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:3      *ABS*:0000003e __SP_H__
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:4      *ABS*:0000003d __SP_L__
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:5      *ABS*:00000034 __CCP__
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:18     .text:00000000 WS2812B_Gpio_Init
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:34     .text:00000006 WS2812B_Send_Byte
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:717    .text:00000178 WS2812B_Send_Pixel
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:749    .text:00000198 WS2812B_Reset
+C:\Users\farid\AppData\Local\Temp/ccNJCFh5.s:779    .text:000001aa WS2812B_Init
 
 NO UNDEFINED SYMBOLS

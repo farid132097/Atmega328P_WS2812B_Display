@@ -228,7 +228,7 @@ void WS2812B_Send_Pixel(uint8_t r, uint8_t g, uint8_t b){
   WS2812B_Send_Byte(b);
 }
 
-void WS2812B_Pixel_Delay(void){
+void WS2812B_Reset(void){
   for(uint32_t i=0;i<40000;i++){
 	asm( "nop ");
   }
@@ -237,6 +237,7 @@ void WS2812B_Pixel_Delay(void){
   
 void WS2812B_Init(void){
   WS2812B_Gpio_Init();
+  WS2812B_Reset();
 }
 
 
