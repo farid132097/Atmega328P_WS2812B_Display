@@ -1,0 +1,138 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21 0000 CF93      		push r28
+  22 0002 DF93      		push r29
+  23               	/* prologue: function */
+  24               	/* frame size = 0 */
+  25               	.LM2:
+  26 0004 0E94 0000 		call WS2812B_Init
+  27               	.LM3:
+  28 0008 0E94 0000 		call RGB_Animation_Init
+  29               	.LM4:
+  30 000c 0E94 0000 		call debug_init
+  31               	.LBB12:
+  32               	.LBB13:
+  33               	.LBB14:
+  34               	.LBB15:
+  35               	.LM5:
+  36 0010 CCE2      		ldi r28,lo8(300)
+  37 0012 D1E0      		ldi r29,hi8(300)
+  38               	.LVL0:
+  39               	.L3:
+  40               	.LBE15:
+  41               	.LBE14:
+  42               	.LBE13:
+  43               	.LBE12:
+  44               	.LM6:
+  45 0014 0E94 0000 		call RGB_Animation_Rotate_All_Color
+  46               	.LVL1:
+  47 0018 88EE      		ldi r24,lo8(1000)
+  48 001a 93E0      		ldi r25,hi8(1000)
+  49               	.LVL2:
+  50               	.L2:
+  51               	.LBB19:
+  52               	.LBB18:
+  53               	.LBB17:
+  54               	.LBB16:
+  55               	.LM7:
+  56 001c FE01      		movw r30,r28
+  57               	.LVL3:
+  58               	/* #APP */
+  59               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  60 001e 3197      		1: sbiw r30,1
+  61 0020 01F4      		brne 1b
+  62               	 ;  0 "" 2
+  63               	/* #NOAPP */
+  64               	.LBE16:
+  65               	.LBE17:
+  66               	.LM8:
+  67 0022 0197      		sbiw r24,1
+  68               	.LM9:
+  69 0024 01F4      		brne .L2
+  70 0026 00C0      		rjmp .L3
+  71               	.LBE18:
+  72               	.LBE19:
+  73               	.LFE6:
+  75               	.global	colors
+  76               		.data
+  79               	colors:
+  80 0000 FE        		.byte	-2
+  81 0001 D7        		.byte	-41
+  82 0002 00        		.byte	0
+  83 0003 66        		.byte	102
+  84 0004 CC        		.byte	-52
+  85 0005 00        		.byte	0
+  86 0006 73        		.byte	115
+  87 0007 9B        		.byte	-101
+  88 0008 D0        		.byte	-48
+  89 0009 33        		.byte	51
+  90 000a 33        		.byte	51
+  91 000b FE        		.byte	-2
+  92 000c B2        		.byte	-78
+  93 000d 66        		.byte	102
+  94 000e FE        		.byte	-2
+  95 000f 00        		.byte	0
+  96 0010 10        		.byte	16
+  97 0011 20        		.byte	32
+  98 0012 00        		.byte	0
+  99 0013 10        		.byte	16
+ 100 0014 20        		.byte	32
+ 101 0015 00        		.byte	0
+ 102 0016 10        		.byte	16
+ 103 0017 20        		.byte	32
+ 104 0018 00        		.byte	0
+ 105 0019 10        		.byte	16
+ 106 001a 20        		.byte	32
+ 107 001b 00        		.byte	0
+ 108 001c 10        		.byte	16
+ 109 001d 20        		.byte	32
+ 110               	.global	color_index
+ 111               	.global	color_index
+ 112               		.section .bss
+ 115               	color_index:
+ 116 0000 00        		.skip 1,0
+ 117               	.global	red_val
+ 118               	.global	red_val
+ 121               	red_val:
+ 122 0001 00        		.skip 1,0
+ 123               	.global	green_val
+ 124               	.global	green_val
+ 127               	green_val:
+ 128 0002 00        		.skip 1,0
+ 129               	.global	blue_val
+ 130               	.global	blue_val
+ 133               	blue_val:
+ 134 0003 00        		.skip 1,0
+ 159               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:2      *ABS*:0000003f __SREG__
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:3      *ABS*:0000003e __SP_H__
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:4      *ABS*:0000003d __SP_L__
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:5      *ABS*:00000034 __CCP__
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:18     .text:00000000 main
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:79     .data:00000000 colors
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:115    .bss:00000000 color_index
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:121    .bss:00000001 red_val
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:127    .bss:00000002 green_val
+C:\Users\farid\AppData\Local\Temp/ccBcJCyq.s:133    .bss:00000003 blue_val
+
+UNDEFINED SYMBOLS
+WS2812B_Init
+RGB_Animation_Init
+debug_init
+RGB_Animation_Rotate_All_Color
+__do_copy_data
+__do_clear_bss

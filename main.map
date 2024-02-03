@@ -1,0 +1,691 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                              animation.o (__udivmodqi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              debug.o (__udivmodsi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+RGBAnim             0x41              animation.o
+debug               0x2d              debug.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+LOAD main.o
+LOAD ws2812b.o
+LOAD animation.o
+LOAD debug.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1494
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_19
+                0x000000a2                __vector_7
+                0x000000a2                __vector_5
+                0x000000a2                __vector_9
+                0x000000a2                __vector_2
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_14
+                0x000000a2                __vector_10
+                0x000000a2                __vector_18
+                0x000000a2                __vector_20
+ .text          0x000000a6       0x28 main.o
+                0x000000a6                main
+ .text          0x000000ce      0x1b0 ws2812b.o
+                0x00000246                WS2812B_Send_Pixel
+                0x00000278                WS2812B_Init
+                0x000000d4                WS2812B_Send_Byte
+                0x000000ce                WS2812B_Gpio_Init
+                0x00000266                WS2812B_Pixel_Delay
+ .text          0x0000027e      0xa44 animation.o
+                0x00000c06                RGB_Animation_Slide_Fill
+                0x000006ea                RGB_Brightness_Inc_Mid
+                0x000005ea                RGB_Brightness_Dec_Mid
+                0x0000028e                RGB_Animation_Brightness_Dec
+                0x00000332                RGB_Animation_Slide
+                0x00000896                RGB_Brightness_Dec
+                0x00000a66                RGB_Animation_Slide_Unfill
+                0x0000082e                RGB_Animation_Slide_Fill_Mid
+                0x0000027e                RGB_Animation_Clear_Pixel_Buf
+                0x000004ba                RGB_Animation_Rotate_All_Color
+                0x00000c54                RGB_Animation_Clear_All_Pixels
+                0x00000a1c                RGB_Animation_Slide_Unfill_Mid
+                0x000002d2                RGB_Animation_Brightness_Inc
+                0x00000ab0                RGB_Brightness_Inc
+                0x00000c76                RGB_Animation_Init
+ .text          0x00000cc2      0x772 debug.o
+                0x00000da0                debug_delay_index_1
+                0x000012be                debug_tx_parameter_bin_nl
+                0x000011b8                debug_tx_number_bin_nl
+                0x00001188                debug_tx_number_cm
+                0x0000130a                Debug_tx_parameter_bin_cm
+                0x0000108e                debug_tx_text_cm
+                0x00001098                debug_determine_digit_numbers
+                0x00000cc2                debug_struct_init
+                0x00000d3a                debug_timer_stop
+                0x00001382                debug_available_bytes_rx_buf
+                0x00001196                debug_tx_number_hex_nl
+                0x00001330                debug_buf_get
+                0x00000e6c                debug_rx_byte
+                0x00001342                debug_flush_buf
+                0x0000133c                debug_buf_index_get
+                0x000011aa                debug_tx_number_hex_cm
+                0x000011da                debug_tx_parameter_nl
+                0x0000117e                debug_tx_number_sp
+                0x0000107a                debug_tx_text_nl
+                0x00000d56                debug_tx_set
+                0x00001298                Debug_tx_parameter_hex_cm
+                0x00001054                debug_tx_text
+                0x000011c2                debug_tx_number_bin_sp
+                0x00000d52                debug_tx_low
+                0x00000d20                debug_timer_start
+                0x00001226                debug_tx_parameter_cm
+                0x00000eca                debug_rx_byte_clear
+                0x00000d92                debug_delay_index_0
+                0x00001138                debug_tx_number
+                0x00000ed0                debug_rx_byte_set
+                0x00000f8a                debug_tx_bin
+                0x00000d74                debug_delay
+                0x00001396                __vector_4
+                0x00000dae                debug_delay_index_2
+                0x00001044                debug_tx_sp
+                0x00001388                debug_init
+                0x00000d44                debug_gpio_init
+                0x00001084                debug_tx_text_sp
+                0x00001036                debug_tx_nl
+                0x00000d4e                debug_tx_high
+                0x00001174                debug_tx_number_nl
+                0x00001200                debug_tx_parameter_sp
+                0x00001272                debug_tx_parameter_hex_sp
+                0x00000dbc                debug_tx_byte
+                0x000011cc                debug_tx_number_bin_cm
+                0x000011a0                debug_tx_number_hex_sp
+                0x000012e4                debug_tx_parameter_bin_sp
+                0x0000104c                debug_tx_cm
+                0x0000135c                debug_databsy_get
+                0x0000124c                debug_tx_parameter_hex_nl
+                0x00000ed6                debug_tx_hex
+                0x00001362                debug_data_available_rx_buf
+                0x00000ec4                debug_rx_byte_get
+                0x00000cfa                debug_timings_init
+                0x00001414                __vector_16
+                0x00001116                debug_tx_number_digits
+                0x00000d62                debug_rx_get
+ .text          0x00001434        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x00001434        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00001434        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00001434        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00001434        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00001434                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00001434       0x18 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x00001434                __udivmodqi4
+ .text.libgcc   0x0000144c       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x0000144c                __udivmodsi4
+ .text.libgcc   0x00001490        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001490        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001490        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00001490                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001490        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001490                exit
+                0x00001490                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001490        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001494                _etext = .
+
+.data           0x00800100       0x32 load address 0x00001494
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .data          0x00800100       0x1e main.o
+                0x00800100                colors
+ .data          0x0080011e        0x0 ws2812b.o
+ .data          0x0080011e        0x0 animation.o
+ .data          0x0080011e       0x14 debug.o
+                0x00800120                TIM0_BAUD_9600
+                0x00800126                TIM0_BAUD_19200
+                0x0080012c                TIM0_BAUD_38400
+ .data          0x00800132        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x00800132        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800132        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800132        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800132        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800132                . = ALIGN (0x2)
+                0x00800132                _edata = .
+                0x00800132                PROVIDE (__data_end, .)
+
+.bss            0x00800132       0x80
+                0x00800132                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800132        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .bss           0x00800132        0x4 main.o
+                0x00800135                blue_val
+                0x00800133                red_val
+                0x00800134                green_val
+                0x00800132                color_index
+ .bss           0x00800136        0x0 ws2812b.o
+ .bss           0x00800136        0xe animation.o
+                0x00800138                blue
+                0x0080013a                green_dir
+                0x00800142                color3
+                0x00800137                green
+                0x00800136                red
+                0x00800140                color2
+                0x00800139                red_dir
+                0x0080013c                color
+                0x0080013b                blue_dir
+                0x0080013e                color1
+ .bss           0x00800144        0x0 debug.o
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800144       0x41 animation.o
+                0x00800144                RGBAnim
+ COMMON         0x00800185       0x2d debug.o
+                0x00800185                debug
+                0x008001b2                PROVIDE (__bss_end, .)
+                0x00001494                __data_load_start = LOADADDR (.data)
+                0x000014c6                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001b2        0x0
+                0x008001b2                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008001b2                PROVIDE (__noinit_end, .)
+                0x008001b2                _end = .
+                0x008001b2                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x80
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 ws2812b.o
+ .debug_aranges
+                0x00000040       0x20 animation.o
+ .debug_aranges
+                0x00000060       0x20 debug.o
+
+.debug_pubnames
+                0x00000000      0x88b
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x5d main.o
+ .debug_pubnames
+                0x0000005d       0x7e ws2812b.o
+ .debug_pubnames
+                0x000000db      0x248 animation.o
+ .debug_pubnames
+                0x00000323      0x568 debug.o
+
+.debug_info     0x00000000     0x1a89
+ *(.debug_info)
+ .debug_info    0x00000000      0x189 main.o
+ .debug_info    0x00000189      0x146 ws2812b.o
+ .debug_info    0x000002cf      0xb66 animation.o
+ .debug_info    0x00000e35      0xc54 debug.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x683
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xe0 main.o
+ .debug_abbrev  0x000000e0       0xb5 ws2812b.o
+ .debug_abbrev  0x00000195      0x266 animation.o
+ .debug_abbrev  0x000003fb      0x288 debug.o
+
+.debug_line     0x00000000     0x1b0a
+ *(.debug_line)
+ .debug_line    0x00000000      0x12b main.o
+ .debug_line    0x0000012b      0x65f ws2812b.o
+ .debug_line    0x0000078a      0x8e4 animation.o
+ .debug_line    0x0000106e      0xa9c debug.o
+
+.debug_frame    0x00000000      0x520
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 main.o
+ .debug_frame   0x00000020       0x60 ws2812b.o
+ .debug_frame   0x00000080      0x100 animation.o
+ .debug_frame   0x00000180      0x3a0 debug.o
+
+.debug_str      0x00000000      0x887
+ *(.debug_str)
+ .debug_str     0x00000000      0x102 main.o
+                                0x136 (size before relaxing)
+ .debug_str     0x00000102       0x6b ws2812b.o
+                                0x124 (size before relaxing)
+ .debug_str     0x0000016d      0x248 animation.o
+                                0x344 (size before relaxing)
+ .debug_str     0x000003b5      0x4d2 debug.o
+                                0x5bc (size before relaxing)
+
+.debug_loc      0x00000000     0x131b
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x50 main.o
+ .debug_loc     0x00000050       0x62 ws2812b.o
+ .debug_loc     0x000000b2      0xb02 animation.o
+ .debug_loc     0x00000bb4      0x767 debug.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(main.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x228
+ .debug_ranges  0x00000000       0x48 main.o
+ .debug_ranges  0x00000048      0x1c8 animation.o
+ .debug_ranges  0x00000210       0x18 debug.o
+
+Cross Reference Table
+
+Symbol                                            File
+Debug_tx_parameter_bin_cm                         debug.o
+Debug_tx_parameter_hex_cm                         debug.o
+RGBAnim                                           animation.o
+RGB_Animation_Brightness_Dec                      animation.o
+RGB_Animation_Brightness_Inc                      animation.o
+RGB_Animation_Clear_All_Pixels                    animation.o
+RGB_Animation_Clear_Pixel_Buf                     animation.o
+RGB_Animation_Init                                animation.o
+                                                  main.o
+RGB_Animation_Rotate_All_Color                    animation.o
+                                                  main.o
+RGB_Animation_Slide                               animation.o
+RGB_Animation_Slide_Fill                          animation.o
+RGB_Animation_Slide_Fill_Mid                      animation.o
+RGB_Animation_Slide_Unfill                        animation.o
+RGB_Animation_Slide_Unfill_Mid                    animation.o
+RGB_Brightness_Dec                                animation.o
+RGB_Brightness_Dec_Mid                            animation.o
+RGB_Brightness_Inc                                animation.o
+RGB_Brightness_Inc_Mid                            animation.o
+TIM0_BAUD_19200                                   debug.o
+TIM0_BAUD_38400                                   debug.o
+TIM0_BAUD_9600                                    debug.o
+WS2812B_Gpio_Init                                 ws2812b.o
+WS2812B_Init                                      ws2812b.o
+                                                  main.o
+WS2812B_Pixel_Delay                               ws2812b.o
+WS2812B_Send_Byte                                 ws2812b.o
+WS2812B_Send_Pixel                                ws2812b.o
+                                                  animation.o
+__bad_interrupt                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__bss_end                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__data_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_start                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__do_clear_bss                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                                                  debug.o
+                                                  animation.o
+                                                  main.o
+__do_copy_data                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                                                  debug.o
+                                                  main.o
+__heap_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__init                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__stack                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__udivmodqi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                                                  animation.o
+__udivmodsi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                                                  debug.o
+__vector_1                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_10                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_11                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_12                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_13                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_14                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_15                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_16                                       debug.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_17                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_18                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_19                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_2                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_20                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_21                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_22                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_23                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_24                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_25                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_3                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_4                                        debug.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_5                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_6                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_7                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_8                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_9                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_default                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vectors                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+_exit                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+blue                                              animation.o
+blue_dir                                          animation.o
+blue_val                                          main.o
+color                                             animation.o
+color1                                            animation.o
+color2                                            animation.o
+color3                                            animation.o
+color_index                                       main.o
+colors                                            main.o
+debug                                             debug.o
+debug_available_bytes_rx_buf                      debug.o
+debug_buf_get                                     debug.o
+debug_buf_index_get                               debug.o
+debug_data_available_rx_buf                       debug.o
+debug_databsy_get                                 debug.o
+debug_delay                                       debug.o
+debug_delay_index_0                               debug.o
+debug_delay_index_1                               debug.o
+debug_delay_index_2                               debug.o
+debug_determine_digit_numbers                     debug.o
+debug_flush_buf                                   debug.o
+debug_gpio_init                                   debug.o
+debug_init                                        debug.o
+                                                  main.o
+debug_rx_byte                                     debug.o
+debug_rx_byte_clear                               debug.o
+debug_rx_byte_get                                 debug.o
+debug_rx_byte_set                                 debug.o
+debug_rx_get                                      debug.o
+debug_struct_init                                 debug.o
+debug_timer_start                                 debug.o
+debug_timer_stop                                  debug.o
+debug_timings_init                                debug.o
+debug_tx_bin                                      debug.o
+debug_tx_byte                                     debug.o
+debug_tx_cm                                       debug.o
+debug_tx_hex                                      debug.o
+debug_tx_high                                     debug.o
+debug_tx_low                                      debug.o
+debug_tx_nl                                       debug.o
+debug_tx_number                                   debug.o
+debug_tx_number_bin_cm                            debug.o
+debug_tx_number_bin_nl                            debug.o
+debug_tx_number_bin_sp                            debug.o
+debug_tx_number_cm                                debug.o
+debug_tx_number_digits                            debug.o
+debug_tx_number_hex_cm                            debug.o
+debug_tx_number_hex_nl                            debug.o
+debug_tx_number_hex_sp                            debug.o
+debug_tx_number_nl                                debug.o
+debug_tx_number_sp                                debug.o
+debug_tx_parameter_bin_nl                         debug.o
+debug_tx_parameter_bin_sp                         debug.o
+debug_tx_parameter_cm                             debug.o
+debug_tx_parameter_hex_nl                         debug.o
+debug_tx_parameter_hex_sp                         debug.o
+debug_tx_parameter_nl                             debug.o
+debug_tx_parameter_sp                             debug.o
+debug_tx_set                                      debug.o
+debug_tx_sp                                       debug.o
+debug_tx_text                                     debug.o
+debug_tx_text_cm                                  debug.o
+debug_tx_text_nl                                  debug.o
+debug_tx_text_sp                                  debug.o
+exit                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+green                                             animation.o
+green_dir                                         animation.o
+green_val                                         main.o
+main                                              main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+red                                               animation.o
+red_dir                                           animation.o
+red_val                                           main.o
